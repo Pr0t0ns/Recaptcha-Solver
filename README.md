@@ -22,4 +22,4 @@ Additonal Notes
 * You may need to Customize some of the iframe XPATH's if your trying to solve on another website than the one it's using
 
 Script Example
-https://imgur.com/7nQ3hh6
+![alt text](https://imgur.com/7nQ3hh6)
