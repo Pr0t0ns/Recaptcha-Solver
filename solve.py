@@ -68,8 +68,7 @@ class Recaptcha:
             self.driver.switch_to.default_content()
         except Exception:
             self.driver.quit()
-            Log.error("Error Getting Recaptcha!")
-            return 
+            return Log.error("Error Getting Recaptcha!") 
         try:
             self.driver.switch_to.frame(self.driver.find_elements(By.XPATH, "/html/body/div[2]/div[4]/iframe")[0])
             WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div/div[3]/div[2]/div[1]/div[1]/div[2]/button'))).click()
@@ -78,8 +77,7 @@ class Recaptcha:
                 Log.normal(f"Retrived Recaptcha Audio Challenge ({download_link})")
         except Exception:
             self.driver.quit()
-            Log.error("Recaptcha seems to be ratelimited on this IP!")
-            return
+            return Log.error("Recaptcha seems to be ratelimited on this IP!") 
         try:
             audio_text = self.download_audio(download_link, f"recaptcha{random.randint(1, 500000)}{download_link[len(download_link)-15]}")
             if self.only_display_token == False:
@@ -94,9 +92,7 @@ class Recaptcha:
             captcha_response = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/input'))).get_attribute('value')
             Log.success(f"Solved Recaptcha --> ({captcha_response})")
         except Exception as err:
-            input(err)
-            Log.error("Error Sumbitting Recaptcha Answer!")
-            return
+            return Log.error("Error Sumbitting Recaptcha Answer!")
         self.driver.quit()
         return captcha_response
 if __name__ == "__main__":
