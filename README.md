@@ -22,4 +22,4 @@ Additonal Notes
 * You may need to Customize some of the iframe XPATH's if your trying to solve on another website than the one it's using
 
 Script Example
-!(https://raw.githubusercontent.com/Pr0t0ns/Recaptcha-Solver/main/solved.PNG?raw=true)
+![Screenshot of Solved Recaptcha using Script](https://raw.githubusercontent.com/Pr0t0ns/Recaptcha-Solver/main/solved.PNG?raw=true)
