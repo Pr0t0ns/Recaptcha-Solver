@@ -1,7 +1,7 @@
 # Recaptcha-Solver Made by Pr0t0ns
 PLEASE STAR REPO (50 Stars and I will make Funcaptcha Solver Next)
 
-**Selenium Based Python Solver for Recaptcha**
+**Undetected Selenium Based Python Solver for Recaptcha**
 Run main.py
 
 Features
@@ -16,3 +16,7 @@ Features
 
 In Progress
 * I am thinking about making some parts of the code requests based so they not everything is done via browser this will make the program much faster (Not sure if i will add this yet though)
+
+Additonal Notes
+* For Some reason if you enable headerless browser option it becomes slower at solving not exactly sure why
+* You may need to Customize some of the iframe XPATH's if your trying to solve on another website than the one it's using
