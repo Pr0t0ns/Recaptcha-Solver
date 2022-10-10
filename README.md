@@ -20,3 +20,6 @@ In Progress
 Additonal Notes
 * For Some reason if you enable headerless browser option it becomes slower at solving not exactly sure why
 * You may need to Customize some of the iframe XPATH's if your trying to solve on another website than the one it's using
+
+Script Example
+https://imgur.com/7nQ3hh6
